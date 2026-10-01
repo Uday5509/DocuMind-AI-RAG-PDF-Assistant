@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DocuMind AI</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <h1>DocuMind AI</h1>
+      <p>Upload a PDF, build a vector index, and ask semantic questions.</p>
+    </section>
+
+    <section class="card">
+      <h2>1. Upload PDF</h2>
+      <form id="uploadForm">
+        <input id="file" type="file" accept=".pdf" required>
+        <button type="submit">Index PDF</button>
+      </form>
+      <p id="uploadStatus"></p>
+    </section>
+
+    <section class="card">
+      <h2>2. Ask a question</h2>
+      <textarea id="question" rows="4" placeholder="Example: What is supervised learning?"></textarea>
+      <button id="askBtn">Ask AI</button>
+      <div id="answer"></div>
+      <div id="sources"></div>
+    </section>
+  </main>
+  <script src="/static/script.js"></script>
+</body>
+</html>
